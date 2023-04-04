@@ -41,7 +41,13 @@
                             <th scope="row">{{ $employees->firstItem() + $key }}</th>
                             <td>{{ $employee->First_Name }}</td>
                             <td>{{ $employee->Last_Name }}</td>
+                            @if ($employee->company == null)
+                            <td></td>
+
+                            @else
+
                             <td>{{ $employee->company->Name }}</td>
+                            @endif
 
                             <td>{{ $employee->Email }}</td>
                             <td>{{ $employee->Phone }}</td>
