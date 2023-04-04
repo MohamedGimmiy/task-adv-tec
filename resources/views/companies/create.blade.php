@@ -26,7 +26,7 @@
                                 {{ $message }}
                             </div>
                             @enderror
-                            <button type="submit" class="mt-3 btn btn-info">Add</button>
+                            <button type="submit" class="mt-3 btn btn-info">{{ __('custom.Add') }}</button>
                         </div>
                       </div>
                 </form>
