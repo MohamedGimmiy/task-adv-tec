@@ -54,7 +54,7 @@ class CompanyController extends Controller
         if(app()->isLocale('en'))
         return redirect('/companies')->with('success','company created successfully');
         else
-        return redirect('/employees')->with('success','تم اضافة الشركة بنجاح !');
+        return redirect('/companies')->with('success','تم اضافة الشركة بنجاح !');
     }
 
     /**
@@ -101,7 +101,7 @@ class CompanyController extends Controller
         if(app()->isLocale('en'))
         return redirect('/companies')->with('success','company updated successfully');
         else
-        return redirect('/employees')->with('success','تم تعديل الشركة بنجاح !');
+        return redirect('/companies')->with('success','تم تعديل الشركة بنجاح !');
     }
 
     /**
@@ -117,6 +117,6 @@ class CompanyController extends Controller
         if(app()->isLocale('en'))
         return redirect('/companies')->with('success','company deleted successfully');
         else
-        return redirect('/employees')->with('success','تم حذف الشركة بنجاح !');
+        return redirect('/companies')->with('success','تم حذف الشركة بنجاح !');
     }
 }
